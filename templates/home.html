@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="container-fluid welcome-container">
-        <img src="" class="logo" alt="Logo"> <!-- Use url_for to link to the logo -->
+        <img src="{{ url_for('static', filename='images/logo.jpg') }}" class="logo" alt="Logo"> <!-- Use url_for to link to the logo -->
         <div class="row h-100">
             <div class="col-md-6 right-side d-flex flex-column justify-content-center">
                 <div>
@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="col-md-6 left-side position-relative"> <!-- Added position-relative -->
-                <img src="https://www.bhmpics.com/downloads/best-anime-group-Wallpapers/1.wp5146356.jpg" alt="Anime Background" class="img-fluid" /> <!-- Use url_for to link to the background image -->
+                <img src="{{ url_for('static', filename='images/homepage.jpg') }}" alt="Anime Background" class="img-fluid">
                 <div class="overlay"></div> <!-- Overlay div -->
             </div>
         </div>
